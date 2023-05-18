@@ -1,0 +1,15 @@
+/home/pranav/Math Game/bin/Debug/net6.0/Math Game
+/home/pranav/Math Game/bin/Debug/net6.0/Math Game.deps.json
+/home/pranav/Math Game/bin/Debug/net6.0/Math Game.runtimeconfig.json
+/home/pranav/Math Game/bin/Debug/net6.0/Math Game.dll
+/home/pranav/Math Game/bin/Debug/net6.0/Math Game.pdb
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.csproj.AssemblyReference.cache
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.GeneratedMSBuildEditorConfig.editorconfig
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.AssemblyInfoInputs.cache
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.AssemblyInfo.cs
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.csproj.CoreCompileInputs.cache
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.dll
+/home/pranav/Math Game/obj/Debug/net6.0/refint/Math Game.dll
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.pdb
+/home/pranav/Math Game/obj/Debug/net6.0/Math Game.genruntimeconfig.cache
+/home/pranav/Math Game/obj/Debug/net6.0/ref/Math Game.dll
