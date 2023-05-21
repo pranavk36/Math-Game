@@ -47,28 +47,30 @@ Q - Quitting The Game");
 
 void Additiongame(string message)
 {
-    Console.WriteLine(message);
     var Random = new Random();
     var score = 0;
     int num1;
     int num2;
     for (int i = 0; i < 5; i++)
     {
-
+        Console.Clear();
+        Console.WriteLine(message);
         num1 = Random.Next(1, 50);
         num2 = Random.Next(1, 50);
 
         Console.WriteLine($"{num1} + {num2}");
         var result = Console.ReadLine();
 
-      if (int.Parse(result) == num1 + num2)
+        if (int.Parse(result) == num1 + num2)
         {
             System.Console.WriteLine("Correct!");
             score++;
+            Console.ReadKey();
         }
         else
         {
             System.Console.WriteLine("Wrong...");
+            Console.ReadKey();
         }
         if (i == 4) { System.Console.WriteLine($"Game Over!! Your Score is {score}"); }
     }
@@ -77,17 +79,18 @@ void Additiongame(string message)
 
 
 };
+
 void SubtractionGame(string message)
 {
 
-    Console.WriteLine(message);
     var Random = new Random();
     var score = 0;
     int num1;
     int num2;
     for (int i = 0; i < 5; i++)
     {
-
+        Console.Clear();
+        Console.WriteLine(message);
         num1 = Random.Next(1, 50);
         num2 = Random.Next(1, 50);
 
@@ -98,24 +101,28 @@ void SubtractionGame(string message)
         {
             System.Console.WriteLine("Correct!");
             score++;
+            Console.ReadKey();
         }
         else
         {
             System.Console.WriteLine("Wrong...");
+            Console.ReadKey();
         }
         if (i == 4) { System.Console.WriteLine($"Game Over!! Your Score is {score}"); }
     }
 };
+
 void MultiplicationGame(string message)
 {
-    Console.WriteLine(message);
+
     var Random = new Random();
     var score = 0;
     int num1;
     int num2;
     for (int i = 0; i < 5; i++)
     {
-
+        Console.Clear();
+        Console.WriteLine(message);
         num1 = Random.Next(1, 50);
         num2 = Random.Next(1, 50);
 
@@ -126,12 +133,58 @@ void MultiplicationGame(string message)
         {
             System.Console.WriteLine("Correct!");
             score++;
+            Console.ReadKey();
         }
         else
         {
             System.Console.WriteLine("Wrong...");
+            Console.ReadKey();
         }
         if (i == 4) { System.Console.WriteLine($"Game Over!! Your Score is {score}"); }
     }
 };
-void DivisionGame(string message) { };
+
+void DivisionGame(string message)
+{
+    var score = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        Console.Clear();
+        Console.WriteLine(message);
+        var divisionNumbers = getDivisionNumbers();
+        var num1 = divisionNumbers[0];
+        var num2 = divisionNumbers[1];
+        System.Console.WriteLine($"{num1} / {num2}");
+        var result = Console.ReadLine();
+        if (int.Parse(result) == num1 / num2)
+        {
+            System.Console.WriteLine("Correct!");
+            score++;
+            Console.ReadKey();
+        }
+        else
+        {
+            System.Console.WriteLine("Wrong...");
+            Console.ReadKey();
+        }
+        if (i == 4) { System.Console.WriteLine($"Game Over!! Your Score is {score}"); }
+    }
+};
+
+int[] getDivisionNumbers()
+{
+    var Random = new Random();
+    var num1 = Random.Next(1, 99);
+    var num2 = Random.Next(1, 50);
+    var result = new int[2];
+    while (num1 % num1 != 0)
+    {
+        num1 = Random.Next(1, 99);
+        num2 = Random.Next(1, 99);
+    };
+    result[0] = num1;
+    result[1] = num2;
+
+
+    return result;
+};
