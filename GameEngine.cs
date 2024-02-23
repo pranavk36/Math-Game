@@ -21,7 +21,7 @@ namespace Math_Game
 
                 if (int.Parse(result) == num1 + num2)
                 {
-                    System.Console.WriteLine("Correct!");
+                    System.Console.WriteLine("Correct! Bravo!!!");
                     score++;
                     Console.ReadKey();
                 }
