@@ -1,0 +1,12 @@
+name : Initial Workflow
+on: push
+jobs:
+  build:
+    run-ons: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Sample GitHub Action
+      run: echo "Helo I am git Action"
+    
